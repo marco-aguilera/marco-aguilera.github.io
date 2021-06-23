@@ -49,6 +49,7 @@ body{
 .box input[type="text"]:focus,.box input[type="password"]:focus{
     width:270px;
     border-color: #ff0000ec;
+    color: white;
 }
 .box input[type="submit"]{
     border: 0;
