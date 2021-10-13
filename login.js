@@ -3,7 +3,7 @@ function validate() {
     var password = document.getElementById("password").value;
     if (username == "admin" && password == "user") {
         alert("login succesfully");
-        location.href = "homepage.html";
+        location.href = "viewResume.html";
 
     }
     else {
