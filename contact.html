@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 
 <head>
     <meta charset="utf-8"> <!-- which is a method of converting your typed characters into machine-readable code -->
     <link rel="stylesheet" href="contact.css">
-   
+
 
 </head>
 
@@ -27,41 +26,106 @@
 
 <body>
 
-<div class="wrapper">
-    <header>Send us a Message</header>
-    <form action="#">
-        <div class="dbl-field">
-            <div class="field">
-                <input type="text" name="name" placeholder="Enter your name">
-                <i class='fas fa-user'></i>
-            </div>
-            <div class="field">
-                <input type="text" name="email" placeholder="Enter your email">
-                <i class='fas fa-envelope'></i>
-            </div>
-        </div>
-        <div class="dbl-field">
-            <div class="field">
-                <input type="text" name="phone" placeholder="Enter your phone">
-                <i class='fas fa-phone-alt'></i>
-            </div>
-            <div class="field">
-                <input type="text" name="website" placeholder="Enter your website">
-                <i class='fas fa-globe'></i>
-            </div>
-        </div>
-        <div class="message">
-            <textarea placeholder="Write your message" name="message"></textarea>
-            <i class="material-icons">message</i>
-        </div>
-        <div class="button-area">
-            <button type="submit">Send Message</button>
-            <span></span>
-        </div>
-    </form>
+    <div class="container">
+        <form id="contact" method="post">
+            <h3>Contact Form</h3>
+            <h4>Contact us for custom quote</h4>
+            <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus class="username" />
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required class="email" />
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Type your message here...." tabindex="5" required class="message"></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="submit">
+                    Submit
+                </button>
+            </fieldset>
+        </form>
+    </div>
+
+<!-- loader -->
+<div class="loader">
+    <img src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif" alt="" />
 </div>
 
-<script src="contact.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script type="text/javascript">
+    // User ID
+    // user_id
+    // Access Token
+    // random_access-token
+
+     (function () {
+            emailjs.init("user_4qIACLGtgbqKgwOagE6me");
+     })();
+
+    
+      emailjs.send("service_lgbvkcv", "template_yhwcdb9", {
+        to_name: "username",
+        from_name: "email",
+        message: "message",
+      });
+     
+
+    function validate() {
+        let loader = document.querySelector(".loader");
+        let name = document.querySelector(".username");
+        let email = document.querySelector(".email");
+        let msg = document.querySelector(".message");
+        let btn = document.querySelector(".submit");
+
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (name.value == "" || email.value == "" || msg.value == "") {
+                emptyerror();
+            } else {
+                loader.style.display = "flex";
+                sendmail(name.value, email.value, msg.value);
+                success();
+                loader.style.display = "none";
+            }
+            
+        });
+    }
+    validate();
+
+    function sendmail(name, email, msg) {
+        emailjs.send("service_lgbvkcv", "template_yhwcdb9", {
+            to_name: name,
+            from_name: email,
+            message: msg,
+        });
+    }
+
+    function emptyerror() {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Fields cannot be empty!",
+        });
+    }
+
+    function error() {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+        });
+    }
+
+    function success() {
+        Swal.fire({
+            icon: "success",
+            title: "Success...",
+            text: "Successfully sent message",
+        });
+    }
+</script>
 
 </body>
 
