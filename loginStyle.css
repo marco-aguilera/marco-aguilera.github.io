@@ -102,7 +102,13 @@
     border: 2px solid white;
     background: rgba(255, 255, 238, 0);
     border-radius: 4px;
-    transform: translate(350%,750%);
+    /* transform: translate(350%,750%); */
+    position: absolute;
+    top: 60%;
+    left:0;
+    right:5%;
+    margin:0 auto;
+  
 }
 a {
     display: block;
