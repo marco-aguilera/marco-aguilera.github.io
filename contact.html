@@ -47,6 +47,9 @@
         </form>
     </div>
 
+    <div class="loader">
+        <img src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif" alt="" />
+    </div>
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -62,11 +65,11 @@
      })();
 
     
-      emailjs.send("service_lgbvkcv", "template_yhwcdb9", {
-        to_name: "username",
-        from_name: "email",
-        message: "message",
-      });
+    //   emailjs.send("service_lgbvkcv", "template_yhwcdb9", {
+    //     to_name: "username",
+    //     from_name: "email",
+    //     message: "message",
+    //   });
      
 
     function validate() {
@@ -76,7 +79,7 @@
         let msg = document.querySelector(".message");
         let btn = document.querySelector(".submit");
 
-        btn.addEventListener("contact-submit", (e) => {
+        btn.addEventListener("click", (e) => {
             e.preventDefault();
             if (name.value == "" || email.value == "" || msg.value == "") {
                 emptyerror();
