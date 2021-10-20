@@ -48,6 +48,7 @@
     </div>
 
 
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script type="text/javascript">
@@ -75,7 +76,7 @@
         let msg = document.querySelector(".message");
         let btn = document.querySelector(".submit");
 
-        btn.addEventListener("click", (e) => {
+        btn.addEventListener("contact-submit", (e) => {
             e.preventDefault();
             if (name.value == "" || email.value == "" || msg.value == "") {
                 emptyerror();
