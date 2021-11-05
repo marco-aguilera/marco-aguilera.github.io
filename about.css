@@ -55,10 +55,13 @@
 }
 
 body {
-    margin: 0;
-    height: 100vh;
-    font-weight: 100;
+    /* margin: 0;
+    height: 100vh; */
+    /* font-weight: 100; */
     background: radial-gradient(#000000,#1f1013);
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
    
 
 }
@@ -66,11 +69,31 @@ body {
 p {
   color: white;
    font-family: 'Roboto', sans-serif;
-   transform: translate(5%,400%);
+   /* transform: translate(50%,20%); */
+   text-align: center;
 }
 
 img {
- transform: translate(350%,100%);
+ transform: translate(260%,0%);
  border: 3px solid #ddd;
  border-radius: 80px;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  transform: translate(0%,-100%);
 }

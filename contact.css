@@ -56,10 +56,14 @@
 }
 
 body {
-    margin: 0;
+    /* margin: 0;
     height: 100vh;
-    font-weight: 100;
+    font-weight: 100; */
+    /* background: radial-gradient(#000000,#1f1013); */
     background: radial-gradient(#000000,#1f1013);
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
 
 }
 
