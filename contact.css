@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 /* Style the header with a grey background and some padding */
 /* .header { 
@@ -17,7 +18,7 @@
 } */
 
 /* Change the background color on mouse-over */
-.header-right a {
+/* .header-right a {
     display: inline;
     margin-right: 100px;
     position: relative;
@@ -43,10 +44,10 @@
 }
 .header-right a:hover:before {
     width: 100%
-}
+} */
 
 /* Float the link section to the right */
-.header-right {
+/* .header-right {
   float: right;
   text-align: center;
   transform: translate(-20%,-20%);
@@ -57,6 +58,115 @@
     position: fixed;
     width: 100%;
   
+} */
+
+
+
+:root {
+  --variable-name: value;
+}
+
+
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #3d3d3d3d;
+  --primary-color: white;
+  --secondary-color: darkcyan;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+  
+}
+/* Variables end */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+  /* height: 2px;
+  -webkit-transition: .5s;
+    transition: .5s; */
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+
+nav {
+  /* position: sticky; */
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  float: right;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+nav h2 {
+  color: var(--primary-color);
+}
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+nav a:hover {
+  color: var(--secondary-color);
+  -webkit-transition: .5s;
+    transition: .5s;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
 }
 
 
@@ -67,7 +177,7 @@ body {
     height: 100vh;
     font-weight: 100; */
     /* background: radial-gradient(#000000,#1f1013); */
-    background: radial-gradient(#000000,#1f1013);
+    background:black;
     margin-left:auto;
     margin-right:auto;
     width:960px;
