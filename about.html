@@ -4,61 +4,93 @@
 
 <head>
     <meta charset="utf-8"> <!-- which is a method of converting your typed characters into machine-readable code -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="about.css">
 
 </head>
 
-<header>
 
-    <!-- This is strictly for the header part only -->
-        <div class="header-right">
-            <a href="index.html" >Home</a>
-            <a href="about.html" >About</a>
-            <a href="resume.html" >Resume</a>
-            <a href="contact.html" >Contact</a>
-        </div>
-
-</header>
 
 <body>
 
 
-    <h1>Marco Aguilera</h1>
+    <nav>
+        <h2>Marco Aguilera</h2>
+        <ul class="navigation">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="resume.html" class="nav-link">Resume</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
 
-    <h3>Welcome to my portfolio! </h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <img class="headshot" src="Headshot.png" alt="Trulli" width="150" height="150">
+    <section class="hero" id="about">
+        <img src="Headshot.png" alt="jane-doe" loading="lazy" class="hero-img" />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">
+                I have been an artist at heart for most of my life. I decided to
+                put that aside for the tech field where I wanted to explore a community that is shaping the way
+                we use technology in our everyday lives. I am now a senior at UNT majoring in Information
+                Technology with a passion for Software Development and a love for Design.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="more-about">
+        <h2>Objective</h2>
+        <p>
+            My goal is to help customers implement innovative computing solutions and solve technical problems. As an aspiring
+            Software Developer, I will help teams understand application architectures and integrations. Highly adaptable to change
+            with a strong interest in efficient workflow and communication to launch a project on a trajectory to success.
+        </p>
+        <p>
+            I have been a project manager in a veriaty of Web Development Projects using html, css, javascript, php, and mysql.
+            I have also worked with
+            c/c++, java, and python extensively. I am a person that has a passion for learning all the
+            new tools & technologies that are making innovative chages in our lifes.
+        </p>
     
-    <h2>
-        About
-    </h2>
+    </section>
 
-    <p class="Intro">
-        I have been an artist at heart for most of my life. I decided <br> to
-        put that aside for the tech field where I wanted to explore <br> a community that is shaping the way
-        we use technology <br> in our everyday lives. I am now a senior at UNT majoring <br> in Information
-        Technology with a passion for Software <br> Development and a love for Design.
-        
-        <br>
-        <br>
-        
-        
-        I have been a project manager in a veriaty of Web Development <br> Projects using html, css, javascript, php, and mysql. I have <br> also worked with
-        c/c++, java, and python extensively. I am a <br> person that has a passion for learning all the
-        new tools <br> & technologies that are making innovative chages in our lifes.
-    </p>
-
-    <h2>
-        Web Development
-    </h2>
-
-    <h2>
-        Games
-    </h2>
+    <section class="skills" id="skills">
+        <h2 class="skill-header">Notable Skills</h2>
     
-    <h2>
-        UX/UI
-    </h2>
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="icons8-amazon-web-services.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons8-blockchain.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+    
+            <div class="second-set animate__animated animate__pulse">
+                <img src="icons8-c++.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons8-java.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons8-git.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
