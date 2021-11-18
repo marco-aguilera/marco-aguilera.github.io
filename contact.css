@@ -216,7 +216,7 @@ body {
   /* top:50%; */
   /* left:50%; */
   transform: translate(10%,0%);
-  background:rgba(255, 66, 66, 0.452);
+  background:darkcyan;
   text-align:center;
   border: 1px solid white;
 
@@ -282,7 +282,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-  background: darkcyan;
+  background: rgb(196, 78, 0);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
