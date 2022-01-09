@@ -374,6 +374,15 @@ h3 {
   transform: translate(0%,-100%);
 }
 
+.column {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
+
 
 
 
