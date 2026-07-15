@@ -13,24 +13,26 @@ ShowShareButtons = true
 ShowPostNavLinks = true
 ShowCodeCopyButtons = true
 
+
 description = "Site Reliability Engineer | Observability | Platform Engineering | AI Infrastructure"
 
-[menu]
+[params.profileMode]
+enabled = true
+title = "Hello, I'm Marco Aguilera"
+subtitle = "Site Reliability Engineer specializing in Observability, Platform Engineering, and AI Infrastructure."
 
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 10
+[menu]
 
 [[menu.main]]
 identifier = "projects"
 name = "Projects"
 url = "/projects/"
-weight = 20
+weight = 10
 
 [[menu.main]]
 identifier = "blog"
 name = "Blog"
 url = "/posts/"
-weight = 30
+weight = 20
+
+
