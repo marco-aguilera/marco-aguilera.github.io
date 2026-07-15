@@ -1,0 +1,36 @@
+baseURL = "http://localhost:1313/"
+locale = "en-us"
+title = "Marco Aguilera"
+theme = "PaperMod"
+
+[pagination]
+pagerSize = 10
+
+[params]
+defaultTheme = "dark"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowCodeCopyButtons = true
+
+description = "Site Reliability Engineer | Observability | Platform Engineering | AI Infrastructure"
+
+[menu]
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 20
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/posts/"
+weight = 30
