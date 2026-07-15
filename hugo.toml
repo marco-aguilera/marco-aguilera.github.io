@@ -12,7 +12,8 @@ ShowReadingTime = true
 ShowShareButtons = true
 ShowPostNavLinks = true
 ShowCodeCopyButtons = true
-
+mainSections = ["projects", "posts"]
+ShowHome = true
 
 description = "Site Reliability Engineer | Observability | Platform Engineering | AI Infrastructure"
 
