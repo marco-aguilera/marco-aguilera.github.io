@@ -1,0 +1,91 @@
+{{ define "main" }}
+
+<section class="hero">
+
+<h1>Hello, I'm Marco Aguilera</h1>
+
+<p>
+Site Reliability Engineer specializing in
+Observability, Platform Engineering,
+and AI Infrastructure.
+</p>
+
+</section>
+
+
+<hr>
+<div style="margin-top: 50px;"></div>
+
+
+<section id="projects">
+
+<h2>Featured Projects</h2>
+
+<div class="project-container">
+
+{{ range first 3 (where site.RegularPages "Section" "projects") }}
+
+<article class="project-card">
+
+<h3>
+<a href="{{ .RelPermalink }}">
+{{ .Title }}
+</a>
+</h3>
+
+<p>
+{{ .Description }}
+</p>
+
+{{ with .Params.tags }}
+<p>
+{{ range . }}
+<span>{{ . }}</span>
+{{ end }}
+</p>
+{{ end }}
+
+</article>
+
+{{ end }}
+
+</div>
+
+</section>
+
+
+<hr>
+<div style="margin-top: 50px;"></div>
+
+<section id="blog">
+
+<h2>Latest Writing</h2>
+
+{{ range first 3 (where site.RegularPages "Section" "posts") }}
+
+<article class="post-preview">
+
+<small>
+{{ .Date.Format "Jan 2006" }}
+</small>
+
+<h3>
+<a href="{{ .RelPermalink }}">
+{{ .Title }}
+</a>
+</h3>
+
+<p>
+{{ .Description }}
+</p>
+
+</article>
+
+{{ end }}
+
+</section>
+
+<hr>
+
+
+{{ end }}
