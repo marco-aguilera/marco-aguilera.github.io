@@ -43,6 +43,7 @@ I initially tried using Cloudflare Pages, but it kept directing me to the worker
 **Lessons Learned:**
 
 Leverage the tools accessible to you to get the answers to your issues fast. I was able to find what the next steps were rather quickly. If you're stuck on something or don't know the answer, use your favorite flavor of AI chat to help you out. This will also help you fill in the gaps on certain technical topics. Always double-check the information you are getting because it's not always correct.
+
 Don't reinvent the wheel. If you have layouts that can help you put out some of your content and experience, then take advantage of that. I remember a few years ago I built my webpage portfolio using HTML, CSS, and JavaScript, and it was a lot of fun; however, I spent too much time on the design and functionality portions that I forgot to invest the time in the content of the portfolio. That is why this portfolio will be minimalistic to share my experiences and projects.
 
 **Key Takeaways:**
