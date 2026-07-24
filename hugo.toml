@@ -9,7 +9,7 @@ pagerSize = 10
 [params]
 defaultTheme = "dark"
 ShowReadingTime = true
-ShowShareButtons = true
+ShowShareButtons = false
 ShowPostNavLinks = true
 ShowCodeCopyButtons = true
 mainSections = ["projects", "posts"]
