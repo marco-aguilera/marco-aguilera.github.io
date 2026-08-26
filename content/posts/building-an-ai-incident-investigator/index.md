@@ -1,6 +1,6 @@
 ---
-title: "Building an AI Incident Investigator"
-date: 2026-07-24
+title: "Building an AI Incident Investigator - Part 1"
+date: 2026-08-26
 draft: false
 summary: "Why build an AI incident investigator"
 tags:
@@ -25,7 +25,7 @@ The Incident Investigator begins with a sample JSON file that contains informati
 **Logs, Metrics, and Deployments:**
 
 As separate sources, we created a JSON that contains logs, metrics, and deployment details for each incident. The agent calls these tools to gather incident information, begin analysis, and create an RCA and report with evidence and recommendations.
-The get_error_logs() tool will gather the error evidence; get_service_metrics() also pulls the metrics, and the get_recent_deployment() tool retrieves the information about what was happening before the incident occurred. Having all three is important because each source gives the agent a different perspective of the problem. This allows us to correlate multiple evidence sources into an investigation and help produce a good RCA.
+The ``` get_error_logs() ``` tool will gather the error evidence; ``` get_service_metrics() ``` also pulls the metrics, and the ``` get_recent_deployment() ``` tool retrieves the information about what was happening before the incident occurred. Having all three is important because each source gives the agent a different perspective of the problem. This allows us to correlate multiple evidence sources into an investigation and help produce a good RCA.
 
 
 **Ollama + Llama 3.2:**
@@ -156,7 +156,7 @@ Investigating: INC-002
 Title: HTTP 5xx spike
 
 
-Investigation Report:
+🤖 Investigation Report:
 
 **Summary**
 
