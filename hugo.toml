@@ -26,12 +26,6 @@ subtitle = "Site Reliability Engineer specializing in Observability, Platform En
 [menu]
 
 [[menu.main]]
-identifier = "projects"
-name = "Projects"
-url = "/projects/"
-weight = 10
-
-[[menu.main]]
 identifier = "blog"
 name = "Blog"
 url = "/posts/"

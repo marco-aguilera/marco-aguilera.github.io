@@ -23,47 +23,6 @@ with Enterprise Engineering and everything else under the sun.
 <hr>
 <div style="margin-top: 50px;"></div>
 
-
-<section id="projects">
-
-<h2>Featured Projects</h2>
-<br>
-<div class="project-container">
-
-{{ range first 3 (where site.RegularPages "Section" "projects") }}
-
-<article class="project-card">
-
-<h3>
-<a href="{{ .RelPermalink }}">
-{{ .Title }}
-</a>
-</h3>
-
-<p>
-{{ .Description }}
-</p>
-
-{{ with .Params.tags }}
-<p>
-{{ range . }}
-<span>{{ . }}</span>
-{{ end }}
-</p>
-{{ end }}
-
-</article>
-
-{{ end }}
-
-</div>
-
-</section>
-
-
-<hr>
-<div style="margin-top: 50px;"></div>
-
 <section id="blog">
 
 <h2>Latest Writing</h2>
