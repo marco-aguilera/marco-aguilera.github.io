@@ -13,8 +13,11 @@ tags:
 
 
 This year, I had the opportunity to attend ElasticON, and one of the topics that sparked my interest was Context Engineering for AI Agents. The discussion focused on an issue that was very familiar to what we were experiencing at an enterprise level. We know that AI Agents can spend a lot of time processing information, understanding the schema, and deciding how to query data, which can drive up the token bill significantly.
+
 I found this topic interesting because we recently encountered a similar issue when building a Kubernetes Agent on Elastic.
+
 During the event, Elastic presented its Context Engine as a layer that would contain the data ahead of the prompt. This solution created a reusable unit of knowledge called a Knowledge Indicator and pulled the relevant information for an agent instead of having the agent repeatedly search and query for the same information. Elastic published an example that reduced calls from 33 to 9 and input tokens by 71% while maintaining the correct full answer.
+
 Our implementation was not a complete Context Engine, but I noticed that many of the engineering decisions that were made in Agent Builder were solving the same issue.
 
 
